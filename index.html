@@ -1,0 +1,578 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ecotoxicology Lab | Environmental Health &amp; Molecular Research</title>
+<meta name="description" content="Ecotoxicology Lab — researching environmental pollutants, human health, and ecosystem safety.">
+
+<!-- Google Fonts: Lora (headings) + Inter (body/UI) -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,500;0,600;0,700;1,500&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- =========================================================
+     NAVIGATION BAR
+     Edit lab name / logo text below in the ".nav-logo" span
+========================================================= -->
+<header class="navbar" id="navbar">
+  <div class="nav-container">
+    <a href="#home" class="nav-logo">
+      <span class="nav-logo-icon">⬡</span>
+      <span class="nav-logo-text">Ecotoxicology Lab</span>
+    </a>
+
+    <nav class="nav-links" id="navLinks">
+      <a href="#home" class="nav-link">Home</a>
+      <a href="#about" class="nav-link">About</a>
+      <a href="#team" class="nav-link">Team</a>
+      <a href="#research" class="nav-link">Research Areas</a>
+      <a href="#projects" class="nav-link">Projects</a>
+      <a href="#contribute" class="nav-link">Contribute</a>
+      <a href="#contact" class="nav-link nav-cta">Contact</a>
+    </nav>
+
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<!-- =========================================================
+     1. HOME / HERO SECTION
+     Edit tagline text, and hero background gradient in style.css (.hero)
+========================================================= -->
+<section id="home" class="hero">
+  <div class="hero-bg" aria-hidden="true">
+    <svg class="hero-contours" viewBox="0 0 1200 800" preserveAspectRatio="none">
+      <path class="contour c1" d="M-50,600 C 200,520 350,680 600,600 C 850,520 1000,650 1250,580" />
+      <path class="contour c2" d="M-50,650 C 220,580 380,720 620,650 C 860,580 1020,690 1250,630" />
+      <path class="contour c3" d="M-50,700 C 240,640 400,760 640,700 C 880,640 1040,730 1250,680" />
+    </svg>
+    <div class="hero-dot dot1"></div>
+    <div class="hero-dot dot2"></div>
+    <div class="hero-dot dot3"></div>
+    <div class="hero-dot dot4"></div>
+  </div>
+
+  <div class="hero-content">
+    <p class="eyebrow">Environmental &amp; Molecular Health Research</p>
+    <!-- EDIT LAB NAME HERE -->
+    <h1 class="hero-title">Ecotoxicology Lab</h1>
+    <!-- EDIT TAGLINE HERE -->
+    <p class="hero-tagline">Researching environmental pollutants, human health, and ecosystem safety.</p>
+
+    <div class="hero-actions">
+      <a href="#projects" class="btn btn-primary">Explore Projects</a>
+      <a href="#contact" class="btn btn-secondary">Contact Lab</a>
+    </div>
+  </div>
+
+  <a href="#about" class="scroll-cue" aria-label="Scroll to About section">
+    <span></span>
+  </a>
+</section>
+
+<!-- =========================================================
+     2. ABOUT THE LAB
+     Edit the paragraph text inside .about-text
+========================================================= -->
+<section id="about" class="section about">
+  <div class="container about-grid">
+    <div class="about-text">
+      <p class="section-eyebrow">About the Lab</p>
+      <h2 class="section-title">Understanding pollutants, at the level of genes and communities</h2>
+
+      <!-- EDIT ABOUT PARAGRAPHS HERE -->
+      <p>The Ecotoxicology Lab investigates how environmental pollutants — from waterborne heavy metals to
+        excess fluoride in groundwater — interact with human biology and shape long‑term health outcomes.
+        Our work sits at the intersection of environmental toxicology and molecular biology, combining
+        field‑based exposure assessment with laboratory‑based genetic analysis.</p>
+
+      <p>We study biomarkers of exposure and susceptibility, apply PCR‑based genotyping to identify genetic
+        variants associated with pollutant sensitivity, and evaluate the downstream effects of contaminants
+        such as fluoride and heavy metals on children and vulnerable populations. Our findings are intended
+        to inform public health policy, water quality standards, and community‑level risk mitigation.</p>
+
+      <p>By linking environmental data, molecular genetics, and epidemiology, the lab aims to generate
+        evidence that is both scientifically rigorous and practically useful for underserved and
+        environmentally exposed communities.</p>
+
+      <div class="about-stats">
+        <div class="stat">
+          <span class="stat-num">7+</span>
+          <span class="stat-label">Research focus areas</span>
+        </div>
+        <div class="stat">
+          <span class="stat-num">4</span>
+          <span class="stat-label">Active &amp; upcoming projects</span>
+        </div>
+        <div class="stat">
+          <span class="stat-num">100%</span>
+          <span class="stat-label">Community‑relevant research</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="about-visual">
+      <div class="about-card card-1">
+        <span class="about-card-icon">🧬</span>
+        <p>Molecular biomarkers &amp; genotyping</p>
+      </div>
+      <div class="about-card card-2">
+        <span class="about-card-icon">💧</span>
+        <p>Fluoride &amp; water quality</p>
+      </div>
+      <div class="about-card card-3">
+        <span class="about-card-icon">🌍</span>
+        <p>Human health risk assessment</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- =========================================================
+     TEAM SECTION — Supervisor + Lab Members
+     -----------------------------------------------------------
+     HOW TO ADD REAL PHOTOS:
+     1. Put your image files (e.g. supervisor.jpg, member1.jpg) into
+        an "images" folder next to index.html, style.css, script.js.
+     2. Replace the src="..." placeholder path below with
+        "images/your-photo.jpg" for each person.
+     3. To add a new lab member, copy one ".member-card" block and
+        change the photo, name, and role text.
+========================================================= -->
+<section id="team" class="section team">
+  <div class="container">
+    <div class="section-head">
+      <p class="section-eyebrow">Meet the People</p>
+      <h2 class="section-title">Our Team</h2>
+      <p class="section-sub">The supervisor and researchers behind the lab's work.</p>
+    </div>
+
+    <!-- ---- Supervisors spotlight ---- -->
+    <!-- EDIT SUPERVISOR NAMES / DESIGNATIONS / PHOTOS HERE -->
+    <div class="supervisors-grid">
+
+      <div class="supervisor-card">
+        <img src="images/supervisor1.jpg" alt="Photo of Prof. Dr. Syed Ali Musstjab Akber Shah Eqani" class="supervisor-photo"
+             onerror="this.src='https://placehold.co/300x300/2F6B4F/FFFFFF?text=Supervisor'">
+        <div class="supervisor-info">
+          <span class="option-icon">🎓</span>
+          <h3>Prof. Dr. Syed Ali Musstjab Akber Shah Eqani</h3>
+          <p class="supervisor-role">Lab Supervisor / Principal Investigator</p>
+          <p class="supervisor-bio">Guides the Ecotoxicology Lab's research on environmental pollutant exposure,
+            toxicology, and public health outcomes, overseeing project design and collaborative partnerships.</p>
+        </div>
+      </div>
+
+      <div class="supervisor-card">
+        <img src="images/supervisor2.jpg" alt="Photo of Prof. Dr. Ismat Nawaz" class="supervisor-photo"
+             onerror="this.src='https://placehold.co/300x300/3E6E8E/FFFFFF?text=Supervisor'">
+        <div class="supervisor-info">
+          <span class="option-icon">🎓</span>
+          <h3>Prof. Dr. Ismat Nawaz</h3>
+          <p class="supervisor-role">Co-Supervisor</p>
+          <p class="supervisor-bio">Provides guidance on molecular biology and genotyping methodology, supporting
+            student research and the lab's academic direction.</p>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- ---- Lab members grid ---- -->
+    <h3 class="team-subheading">Lab Members</h3>
+    <div class="team-grid">
+
+      <!-- Member card template: copy/paste to add more members -->
+      <div class="member-card">
+        <img src="images/member1.jpg" alt="Photo of lab member"
+             onerror="this.src='https://placehold.co/220x220/E7F0E8/2F6B4F?text=Photo'">
+        <h4>[Member Name]</h4>
+        <p>MS Researcher</p>
+      </div>
+
+      <div class="member-card">
+        <img src="images/member2.jpg" alt="Photo of lab member"
+             onerror="this.src='https://placehold.co/220x220/EAF2F6/3E6E8E?text=Photo'">
+        <h4>[Member Name]</h4>
+        <p>PhD Researcher</p>
+      </div>
+
+      <div class="member-card">
+        <img src="images/member3.jpg" alt="Photo of lab member"
+             onerror="this.src='https://placehold.co/220x220/F3F5F3/5B6864?text=Photo'">
+        <h4>[Member Name]</h4>
+        <p>Lab Assistant</p>
+      </div>
+
+      <div class="member-card">
+        <img src="images/member4.jpg" alt="Photo of lab member"
+             onerror="this.src='https://placehold.co/220x220/E7F0E8/2F6B4F?text=Photo'">
+        <h4>[Member Name]</h4>
+        <p>Student Researcher</p>
+      </div>
+
+    </div>
+
+    <!-- ---- Group photo ---- -->
+    <!-- EDIT GROUP PHOTO HERE — replace src with your lab group picture -->
+    <div class="group-photo-wrap">
+      <img src="images/group-photo.jpg" alt="Ecotoxicology Lab group photo" class="group-photo"
+           onerror="this.src='https://placehold.co/1100x480/1F4A38/FFFFFF?text=Lab+Group+Photo'">
+      <p class="group-photo-caption">The Ecotoxicology Lab team</p>
+    </div>
+  </div>
+</section>
+
+<!-- =========================================================
+     3. RESEARCH AREAS
+     Duplicate a .research-card block to add a new area
+========================================================= -->
+<section id="research" class="section research">
+  <div class="container">
+    <div class="section-head">
+      <p class="section-eyebrow">What We Study</p>
+      <h2 class="section-title">Research Areas</h2>
+      <p class="section-sub">Seven interconnected areas that shape our understanding of environmental
+        exposure and human health.</p>
+    </div>
+
+    <div class="research-grid">
+      <!-- Research card template: copy/paste to add more -->
+      <div class="research-card">
+        <div class="research-icon">🌱</div>
+        <h3>Environmental Toxicology</h3>
+        <p>Examining how pollutants move through ecosystems and accumulate in living organisms over time.</p>
+      </div>
+
+      <div class="research-card">
+        <div class="research-icon">🦷</div>
+        <h3>Fluoride Exposure Studies</h3>
+        <p>Assessing groundwater fluoride levels and their association with dental and skeletal fluorosis.</p>
+      </div>
+
+      <div class="research-card">
+        <div class="research-icon">⚗️</div>
+        <h3>Heavy Metal Toxicity</h3>
+        <p>Investigating exposure pathways and physiological effects of arsenic, lead, cadmium, and related metals.</p>
+      </div>
+
+      <div class="research-card">
+        <div class="research-icon">🧬</div>
+        <h3>Molecular Biomarkers</h3>
+        <p>Identifying biological indicators of pollutant exposure, susceptibility, and early health effects.</p>
+      </div>
+
+      <div class="research-card">
+        <div class="research-icon">🩺</div>
+        <h3>Human Health Risk Assessment</h3>
+        <p>Translating environmental and genetic data into evidence‑based public health risk evaluations.</p>
+      </div>
+
+      <div class="research-card">
+        <div class="research-icon">🧪</div>
+        <h3>Genotyping &amp; PCR‑Based Analysis</h3>
+        <p>Using Tetra‑ARMS PCR and related molecular techniques to characterize gene variants of interest.</p>
+      </div>
+
+      <div class="research-card">
+        <div class="research-icon">💧</div>
+        <h3>Water Quality &amp; Environmental Monitoring</h3>
+        <p>Field sampling and analysis of groundwater and surface water in exposed communities.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- =========================================================
+     4. LAB PROJECTS
+     Copy a .project-card block to add a new project.
+     Status classes: status-ongoing / status-completed / status-future
+========================================================= -->
+<section id="projects" class="section projects">
+  <div class="container">
+    <div class="section-head">
+      <p class="section-eyebrow">Our Work</p>
+      <h2 class="section-title">Lab Projects</h2>
+      <p class="section-sub">Ongoing and upcoming research initiatives — get in touch if you'd like to contribute.</p>
+    </div>
+
+    <div class="projects-grid">
+
+      <!-- Project card 1 -->
+      <article class="project-card">
+        <span class="status-badge status-ongoing">Ongoing</span>
+        <h3>Assessment of Fluoride Exposure in Children</h3>
+        <p>Evaluating groundwater fluoride levels and dental fluorosis prevalence among children in
+          fluoride‑endemic regions, linked with VDR gene variability.</p>
+        <button class="btn btn-outline contribute-btn" data-project="Assessment of Fluoride Exposure in Children">Contribute</button>
+      </article>
+
+      <!-- Project card 2 -->
+      <article class="project-card">
+        <span class="status-badge status-ongoing">Ongoing</span>
+        <h3>Genetic Susceptibility &amp; Environmental Pollutant Exposure</h3>
+        <p>Investigating gene–environment interactions that influence individual susceptibility to
+          pollutant‑related health outcomes.</p>
+        <button class="btn btn-outline contribute-btn" data-project="Genetic Susceptibility & Environmental Pollutant Exposure">Contribute</button>
+      </article>
+
+      <!-- Project card 3 -->
+      <article class="project-card">
+        <span class="status-badge status-completed">Completed</span>
+        <h3>Water Quality Analysis in Exposed Communities</h3>
+        <p>Field‑based sampling and laboratory analysis of groundwater quality in communities with known
+          contaminant exposure.</p>
+        <button class="btn btn-outline contribute-btn" data-project="Water Quality Analysis in Exposed Communities">Contribute</button>
+      </article>
+
+      <!-- Project card 4 -->
+      <article class="project-card">
+        <span class="status-badge status-future">Future</span>
+        <h3>Biomarker‑Based Evaluation of Toxic Effects</h3>
+        <p>Developing a panel of molecular biomarkers to evaluate early physiological effects of pollutant
+          exposure in at‑risk populations.</p>
+        <button class="btn btn-outline contribute-btn" data-project="Biomarker-Based Evaluation of Toxic Effects">Contribute</button>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<!-- =========================================================
+     5. CONTRIBUTION SECTION
+     Edit contribution option cards + the dropdown in the form below
+========================================================= -->
+<section id="contribute" class="section contribute">
+  <div class="container">
+    <div class="section-head">
+      <p class="section-eyebrow">Get Involved</p>
+      <h2 class="section-title">How You Can Contribute</h2>
+      <p class="section-sub">Our research depends on collaboration — here's how you can be part of it.</p>
+    </div>
+
+    <div class="contribute-options">
+      <div class="contribute-option">
+        <span class="option-icon">🤝</span>
+        <h4>Collaborate with our lab</h4>
+      </div>
+      <div class="contribute-option">
+        <span class="option-icon">💡</span>
+        <h4>Share research ideas</h4>
+      </div>
+      <div class="contribute-option">
+        <span class="option-icon">🧪</span>
+        <h4>Support field sampling</h4>
+      </div>
+      <div class="contribute-option">
+        <span class="option-icon">📢</span>
+        <h4>Volunteer for awareness campaigns</h4>
+      </div>
+      <div class="contribute-option">
+        <span class="option-icon">📊</span>
+        <h4>Contribute data or technical skills</h4>
+      </div>
+      <div class="contribute-option">
+        <span class="option-icon">🎓</span>
+        <h4>Join as student researcher</h4>
+      </div>
+    </div>
+
+    <div class="contribute-form-wrap">
+      <form id="contributeForm" class="lab-form">
+        <h3>Contribution Form</h3>
+
+        <div class="form-row">
+          <div class="form-group">
+            <label for="c-name">Name</label>
+            <input type="text" id="c-name" name="name" placeholder="Your full name" required>
+          </div>
+          <div class="form-group">
+            <label for="c-email">Email</label>
+            <input type="email" id="c-email" name="email" placeholder="you@example.com" required>
+          </div>
+        </div>
+
+        <div class="form-row">
+          <div class="form-group">
+            <label for="c-institution">Institution</label>
+            <input type="text" id="c-institution" name="institution" placeholder="University / Organization">
+          </div>
+          <div class="form-group">
+            <label for="c-type">Contribution Type</label>
+            <!-- Edit dropdown options here -->
+            <select id="c-type" name="type">
+              <option value="collaborate">Collaborate with our lab</option>
+              <option value="ideas">Share research ideas</option>
+              <option value="sampling">Support field sampling</option>
+              <option value="volunteer">Volunteer for awareness campaigns</option>
+              <option value="data">Contribute data or technical skills</option>
+              <option value="student">Join as student researcher</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="c-message">Message</label>
+          <textarea id="c-message" name="message" rows="4" placeholder="Tell us a bit about how you'd like to contribute..."></textarea>
+        </div>
+
+        <button type="submit" class="btn btn-primary">Submit Contribution</button>
+        <p class="form-success" id="contributeSuccess">Thank you — your submission has been received.</p>
+      </form>
+    </div>
+  </div>
+</section>
+
+<!-- =========================================================
+     7. CONTACT SECTION
+     Edit email / phone / location placeholders below
+========================================================= -->
+<section id="contact" class="section contact">
+  <div class="container">
+    <div class="section-head">
+      <p class="section-eyebrow">Reach Out</p>
+      <h2 class="section-title">Contact the Lab</h2>
+      <p class="section-sub">Questions about our research, collaborations, or opportunities? Get in touch.</p>
+    </div>
+
+    <div class="contact-grid">
+      <div class="contact-info">
+        <div class="info-item">
+          <span class="info-icon">✉️</span>
+          <div>
+            <h4>Email</h4>
+            <!-- EDIT EMAIL HERE -->
+            <p>info@ecotoxicologylab.example</p>
+          </div>
+        </div>
+        <div class="info-item">
+          <span class="info-icon">📞</span>
+          <div>
+            <h4>Phone</h4>
+            <!-- EDIT PHONE HERE -->
+            <p>+92 000 0000000</p>
+          </div>
+        </div>
+        <div class="info-item">
+          <span class="info-icon">📍</span>
+          <div>
+            <h4>Location</h4>
+            <!-- EDIT LOCATION HERE -->
+            <p>Department of Biosciences,<br>University Campus, Pakistan</p>
+          </div>
+        </div>
+
+        <!-- Google Map placeholder — replace src with a real embed URL -->
+        <div class="map-placeholder">
+          <iframe
+            title="Lab location map"
+            src="https://www.google.com/maps?q=Islamabad,Pakistan&output=embed"
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade">
+          </iframe>
+        </div>
+      </div>
+
+      <form id="contactForm" class="lab-form">
+        <h3>Send a Message</h3>
+        <div class="form-group">
+          <label for="ct-name">Name</label>
+          <input type="text" id="ct-name" name="name" placeholder="Your full name" required>
+        </div>
+        <div class="form-group">
+          <label for="ct-email">Email</label>
+          <input type="email" id="ct-email" name="email" placeholder="you@example.com" required>
+        </div>
+        <div class="form-group">
+          <label for="ct-subject">Subject</label>
+          <input type="text" id="ct-subject" name="subject" placeholder="Subject">
+        </div>
+        <div class="form-group">
+          <label for="ct-message">Message</label>
+          <textarea id="ct-message" name="message" rows="4" placeholder="Write your message..." required></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary">Send Message</button>
+        <p class="form-success" id="contactSuccess">Thank you — your message has been sent.</p>
+      </form>
+    </div>
+  </div>
+</section>
+
+<!-- =========================================================
+     FOOTER
+     Edit quick links / social placeholders / copyright text
+========================================================= -->
+<footer class="footer">
+  <div class="container footer-grid">
+    <div class="footer-brand">
+      <span class="nav-logo-icon">⬡</span>
+      <span class="nav-logo-text">Ecotoxicology Lab</span>
+      <p>Researching environmental pollutants, human health, and ecosystem safety.</p>
+    </div>
+
+    <div class="footer-links">
+      <h4>Quick Links</h4>
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#research">Research Areas</a>
+      <a href="#projects">Projects</a>
+      <a href="#contribute">Contribute</a>
+      <a href="#contact">Contact</a>
+    </div>
+
+    <div class="footer-social">
+      <h4>Follow the Lab</h4>
+      <div class="social-icons">
+        <!-- Replace # with real profile links -->
+        <a href="#" aria-label="Twitter / X">𝕏</a>
+        <a href="#" aria-label="LinkedIn">in</a>
+        <a href="#" aria-label="ResearchGate">RG</a>
+        <a href="#" aria-label="Email">✉</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <p>&copy; <span id="year"></span> Ecotoxicology Lab. All rights reserved.</p>
+  </div>
+</footer>
+
+<!-- =========================================================
+     6. HELP CENTER / CHATBOT WIDGET (floating, bottom-right)
+     Edit widget title, options, and canned replies in script.js
+========================================================= -->
+<div class="help-widget" id="helpWidget">
+  <div class="help-box" id="helpBox">
+    <div class="help-header">
+      <span>How can we help you?</span>
+      <button class="help-close" id="helpClose" aria-label="Close help center">&times;</button>
+    </div>
+
+    <div class="help-body" id="helpBody">
+      <p class="help-intro">Hi! Choose a topic below, or type your question.</p>
+      <div class="help-options" id="helpOptions">
+        <!-- Options are populated dynamically from script.js -->
+      </div>
+    </div>
+
+    <form class="help-input-row" id="helpForm">
+      <input type="text" id="helpInput" placeholder="Type your question..." autocomplete="off">
+      <button type="submit" aria-label="Send message">➤</button>
+    </form>
+  </div>
+
+  <button class="help-toggle" id="helpToggle" aria-label="Open help center">
+    <span class="help-toggle-icon help-icon-chat">💬</span>
+    <span class="help-toggle-icon help-icon-close">&times;</span>
+  </button>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
